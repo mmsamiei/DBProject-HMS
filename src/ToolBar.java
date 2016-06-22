@@ -22,6 +22,8 @@ public class ToolBar extends JPanel implements ActionListener {
 		logginButton.addActionListener(this);
 		logoutButton.addActionListener(this);
 		exitButton.addActionListener(this);
+		
+		
 	}
 
 	@Override
