@@ -48,7 +48,8 @@ public class LogginFrame extends JFrame {
 						Connection con=DriverManager.getConnection(  
 								"jdbc:mysql://localhost:3306/healthsystem",usernameTextField.getText().toString(),passwordTexField.getText().toString());
 						System.out.println("salam ok ! I Love you mmsamiei ! :D ");
-						MainFrame mainFrame = new MainFrame();
+						MainFrame mainFrame = new MainFrame(usernameTextField.getText().toString(),passwordTexField.getText().toString());
+						mainFrame.setFrame(mainFrame);
 						dispose();
 					} catch (SQLException e1) {
 						e1.printStackTrace();

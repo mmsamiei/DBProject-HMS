@@ -54,8 +54,6 @@ public class TableModel extends AbstractTableModel{
 	        }
 	        data.add(vector);
 	    }
-
-	    
 	    defTableModel = new DefaultTableModel(data, columnNames);
 	    return defTableModel;
 	}
