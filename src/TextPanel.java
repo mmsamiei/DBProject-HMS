@@ -9,10 +9,16 @@ import javax.swing.JTextArea;
 public class TextPanel extends JPanel {
 	private JTextArea textArea;
 	public TextPanel() {
-		textArea = new JTextArea();
+		setTextArea(new JTextArea());
 		setLayout(new BorderLayout());
 		
-		add(new JScrollPane(textArea), BorderLayout.CENTER);
+		add(new JScrollPane(getTextArea()), BorderLayout.CENTER);
+	}
+	public JTextArea getTextArea() {
+		return textArea;
+	}
+	public void setTextArea(JTextArea textArea) {
+		this.textArea = textArea;
 	}
 	
 }
